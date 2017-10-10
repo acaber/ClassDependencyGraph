@@ -1,3 +1,13 @@
+
+/**
+ * FileName: DirectedGraph.java 
+ * Author: Rebecca Johnson 
+ * Date: 10/10/2017
+ * Description: This class build the graph and generates the results
+ * 		using a depth-first search and presents the answer in topological order.
+ *
+ */
+
 import java.io.*;
 import java.util.*;
 

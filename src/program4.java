@@ -1,3 +1,12 @@
+/**
+ * FileName: program4.java 
+ * Author: Rebecca Johnson 
+ * Date: 10/10/2017
+ * Description: This class creates the GUI to ask the user to enter
+ * 		a valid file name and a valid class that needs to be 
+ * 		recompiled and displays the compilation order.
+ *
+ */
 
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;
@@ -108,7 +117,7 @@ public class program4 extends JFrame {
 			public void actionPerformed(ActionEvent a) {
 
 				recompilationOrder.setText("");
-				
+
 				if (isSelectedInOrder) {
 
 					String className = classToRecompileText.getText();
