@@ -31,7 +31,8 @@ public class DirectedGraph {
 
 			while (inputFile.hasNext()) {
 
-				String[] classNames = inputFile.nextLine().split(" ");
+				String line = inputFile.nextLine().replaceAll("\\s+", " ");
+				String[] classNames = line.split(" ");
 
 				for (int i = 0; i < classNames.length; i++) {
 
@@ -60,7 +61,8 @@ public class DirectedGraph {
 
 			while (inputFile.hasNext()) {
 
-				String[] classNames = inputFile.nextLine().split("[ \n]");
+				String line = inputFile.nextLine().replaceAll("\\s+", " ");
+				String[] classNames = line.split("[ \n]");
 				adjacentVertices[vertexMap.get(classNames[0])] = new ArrayList<>();
 
 				for (int i = 1; i < classNames.length; i++) {
