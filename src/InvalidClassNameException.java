@@ -1,3 +1,4 @@
+
 /**
  * FileName: InvalidClassNameException.java 
  * Author: Rebecca Johnson 
@@ -12,6 +13,8 @@ import javax.swing.JOptionPane;
 public class InvalidClassNameException extends Exception {
 
 	public InvalidClassNameException() {
+
+		// displays the invalid class name exception error
 		JOptionPane.showMessageDialog(null, "You Must Enter A Valid Class Name");
 	}
 

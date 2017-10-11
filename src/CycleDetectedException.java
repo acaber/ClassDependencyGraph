@@ -1,3 +1,4 @@
+
 /**
  * FileName: CycleDetectedException.java 
  * Author: Rebecca Johnson 
@@ -10,8 +11,10 @@ import javax.swing.JOptionPane;
 
 public class CycleDetectedException extends Exception {
 
-   public CycleDetectedException(){
-        JOptionPane.showMessageDialog(null, "Circular Dependency Cycle Detected ");
-   }
+	public CycleDetectedException() {
+
+		// displays the cycle detected exception error
+		JOptionPane.showMessageDialog(null, "Circular Dependency Cycle Detected ");
+	}
 
 }
